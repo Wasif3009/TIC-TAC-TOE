@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(0, 0%, 0%);
+  color: white;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.tic-tac-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.boxes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 100px;
+  color: black;
+  text-align: center;
+  line-height: 200px;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: #cccccc;
+}
+
+.heading {
+  font-size: 50px;
+}
+
+.reset-button {
+  background-color: #ccc; /* Red color */
+  color: black;
+  border: none;
+  padding: 20px 30px;
+  border-radius: 8px;
+  font-size: 22px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.reset-button:hover {
+  color: #ccc;
+  background-color: black; /* Darker red on hover */
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.reset-button:active {
+  transform: scale(0.98); /* Pressed effect */
+}
+.h2 {
+  font-size: 40px;
+  color: #ccc;
+}
